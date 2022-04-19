@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html:5 lang="es"> <!--inicio-->
+
+
+<!--inicio cabeza-->
+<head> 
+<title>DonatoShoes</title>
+
+<!--responsive-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--favicon-->
+<link  rel= "icono de acceso directo"  href= "../Imagenes/favicon.ico"  type= "imagen/icono-x" > 
+<link  rel= "icono"  href= "../Imagenes/favicon.ico"  type= "imagen/icono-x" >
+
+<!--estilos bootstrap-->
+<link rel="stylesheet" href="../Bootstrap/css/bootstrap.css">
+
+<!--estilos css-->
+<link rel="stylesheet" href="../Estilos/estilos.css">
+</head>
+
+
+<!--inicio cuerpo-->
+<body> 
+<header class="bordeDorado letraNegrita paddingDos gradiente"> <!--encabezado-->
+<h1 class="letraGrande letraYellow">
+<img src="../Imagenes/ds-logo-monogram-with-triangle-shape-and-circle-rounded-isolated-on-gold-colors-700-196815960.jpg" width="50" alt="Logo DonatoShoes" class="rounded">
+DonatoShoes
+</h1>
+
+<!--enlaces-->
+<nav class="letraMediana flexWrap navAnimado">
+<span><a href="../index.html"- class="subrUno rounded"> INICIO</a></span>    
+<span><a href="productos.html"- class="subrUno rounded"> PRODUCTOS</a></span>           
+<span><a href="nosotros.html"- class="subrUno rounded"> NOSOTROS</a></span>
+<span><a href="preguntas.html"- class="subrUno rounded"> PREGUNTAS FRECUENTES</a></span> 
+<span><a href="contacto.html"- class="subrUno rounded"> CONTACTO</a></span>
+</nav>
+</header>
+
+
+<main class="gradienteDos"> <!--contenido principal-->
+
+<section class="margenUno letraItalica">
+<h2><p>Querés ser un usuario registrado de Donato Shoes?</p></h2>
+<h3><p class="margenCuatro">Completá el siguiente formulario, así podremos comunicarnos con vos y accederás a las mejores ofertas!</p></h3>
+</section>
+
+<!--inicio formulario-->
+<form class="margenTres letraPlateada" action="">
+
+<section class="margenDos">
+<label for="sexo">Sexo:</label>
+<div class="form-check">
+    <input class="form-check-input margenTres" type="radio" name="SexoRadios" id="SexoRadios1" value="option1" checked>
+    <label class="form-check-label" for="SexoRadios1">
+Hombre
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input margenTres" type="radio" name="SexoRadios" id="SexoRadios2" value="option2">
+    <label class="form-check-label" for="SexoRadios2">
+Mujer
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input margenTres" type="radio" name="SexoRadios" id="SexoRadios3" value="option3">
+    <label class="form-check-label" for="SexoRadios3">
+No Binario
+    </label>
+</div>
+</section>
+
+<section class="margenDos">
+<label class="margenDos" for="nombre">Nombre y Apellido:</label>
+<input type="text" name="nombre">
+</section>
+
+<section class="margenDos">
+<label for="nacionalidad">Nacionalidad:</label>
+<select name="nacionalidad">
+<option value=""></option>
+<option value="argentina">Argentina</option>
+<option value="brasil">Brasil</option>
+<option value="bolivia">Bolivia</option>
+<option value="chile">Chile</option>
+<option value="colombia">Colombia</option>
+<option value="méxico">México</option>
+<option value="paraguay">Paraguay</option>
+<option value="perú">Perú</option>
+<option value="venezuela">Venezuela</option>
+<option value="uruguay">Uruguay</option>
+</select>
+</section>
+
+<section class="margenDos">
+<label for="estado_civil">Estado Civil:</label>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="EstadoRadios" id="EstadoRadios1" value="option1" checked>
+    <label class="form-check-label" for="EstadoRadios1">
+Soltero/a
+</label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="EstadoRadios" id="EstadoRadios2" value="option2">
+    <label class="form-check-label" for="EstadoRadios2">
+Casado/a
+</label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="EstadoRadios" id="EstadoRadios3" value="option3">
+    <label class="form-check-label" for="EstadoRadios3">
+Divorciado/a
+</label>
+</div>
+</section>
+
+<section class="margenDos">
+<label for="correo">Email:</label>
+<input type="email" name="correo">
+</section>
+
+<section class="margenDos">
+<label for="clave">Contraseña:</label>
+<input type="password" name="clave"> 
+</section>
+
+<section class="margenDos">
+<label for="domicilio">Domicilio:</label>
+<input type="text" name="domicilio">
+</section>
+
+<section class="margenDos">
+<label for="número">Número:</label>
+<input type="text" name="número">
+</section>
+
+<section class="margenDos">
+<label for="códigopostal">Código Postal:</label>
+<input type="text" name="códigopostal">
+</section>
+
+<section class="margenDos">
+<label for="celular">Celular:</label>
+<input type="text" name="celular">
+</section>
+
+<section class="margenDos">
+<label for="ocupación">Ocupación Actual:</label>
+<input type="text" name="ocupación">
+</section>
+
+<section class="margenDos">
+<label for="comentarios">Comentarios:</label> <br>
+<textarea name="comentarios" cols="30" rows="10"></textarea> <br>
+</section>
+
+<section class="margenDos">
+<span>Desea recibir información sobre nuestras promociones?</span>
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Sí</label>
+</div>
+</section>
+
+<section class="margenCuatro">
+<input type="reset" value="Limpiar Formulario">
+<input type="submit" value="Enviar Formulario">
+</section>
+</form>
+</main>
+
+
+<!--inicio pie de pagina-->
+<footer class="bordeNegro letraItalica paddingDos gradienteTres flexNoWrap"> 
+<h5 class="letraNegra">
+<img src="../Imagenes/ds-logo-monogram-with-triangle-shape-and-circle-rounded-isolated-on-gold-colors-700-196815960.jpg" width="30" alt="Logo DonatoShoes" class="rounded">
+Política de Privacidad | Política de Cookies
+<img src="../Imagenes/ds-logo-monogram-with-triangle-shape-and-circle-rounded-isolated-on-gold-colors-700-196815960.jpg" width="30" alt="Logo DonatoShoes" class="rounded">
+</h5>
+</footer>
+
+
+</body>
+
+</html>
