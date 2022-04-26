@@ -1,0 +1,25 @@
+
+/*grid*/
+
+        #gridPreguntas {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas: "head"
+            "nav"
+            "body"
+            "footer";
+        grid-template-rows: 30px 2fr 120px 20px;
+        }
+        #gridPreguntas > head {
+        grid-area: head;
+        }
+        #gridPreguntas > nav {
+        grid-area: nav;
+        }
+        #gridPreguntas > body {
+        grid-area: body;
+        }
+        #gridPreguntas > footer {
+        grid-area: footer;
+        }

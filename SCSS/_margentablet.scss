@@ -1,0 +1,58 @@
+
+/*alineacion*/
+.center {
+    text-align: center;
+    }
+    .left {
+    text-align: left;
+    }
+    .right {
+    text-align: right;
+    }
+
+
+
+/*padding*/
+        .paddingUno {
+            padding-top: 12vh; 
+            padding-right: 10px;
+            padding-left: 10px;
+            padding-bottom: 12vh ;
+            }
+            .paddingDos {
+            padding-top: 2vh;
+            padding-bottom: 8px;
+            padding-left: 1vw;
+            padding-right: 1vw;
+            }
+
+
+
+/*margen*/
+        .margenUno {
+            margin-top: 0vh; 
+            margin-bottom: 1vh;
+            margin-left: 0vw;
+            margin-right: 1vw;
+        }
+        .margenDos {
+            margin-top: 1.5vh; 
+            margin-bottom: 1vh;
+            margin-left: 0vw;
+            margin-right: 1vw;
+        }
+        .margenTres {
+            margin-left: 2vw;
+        }
+        .margenCuatro {
+            margin-top: 1vh; 
+            margin-bottom: 0vh;
+            margin-left: 0vw;
+            margin-right: 1vw;
+        }
+        .margenCinco {
+            margin-top: 1vh;
+            margin-bottom: 1vh;
+            margin-left: 0vw;
+            margin-right: 1vw;
+        }

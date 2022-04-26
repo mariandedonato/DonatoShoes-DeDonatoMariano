@@ -1,0 +1,359 @@
+/*comienzo de estilo*/
+
+/*reseteo*/
+*{
+margin: 0;
+padding: 0; 
+}
+
+//import
+@import "tipografia";
+@import "grid";
+@import "scss/bootstrap.scss";
+
+
+//variables
+//sintaxis
+$negro: black;
+$dorado: gold;
+$plateado: silver;
+
+
+//anidamiento
+body {
+    width: 100%;
+    height: 100%;
+#gridIndex {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-areas: "head head" "nav  nav" "body body" "footer  footer";
+        grid-template-rows: 30px 2fr 120px 20px;
+        grid-template-columns: 100vw 100vw;
+    }
+    
+    #gridIndex > head {
+        grid-area: head;
+    }
+    
+    #gridIndex > nav {
+        grid-area: nav;
+    }
+    
+    #gridIndex > body {
+        grid-area: body;
+    }
+    
+    #gridIndex > footer {
+        grid-area: footer;
+    }
+header {
+border: solid 2px $dorado;
+font-weight: bold; 
+padding-top: 2vh;
+padding-bottom: 8px;
+padding-left: 1vw;
+padding-right: 1vw; 
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+}
+
+
+/*color letra*/
+h1, h2, p {
+    color: $plateado;
+    }
+    .letraNegra {
+    color: $negro;
+    }
+    .letraPlateada
+    {
+    color: $plateado;
+    }
+
+
+
+    /*estilo bordes*/
+    .bordeDorado {
+        border: solid 2px $dorado;
+        }
+    .bordeNegro {
+        border: solid 2px $negro
+        }
+
+
+/*estilo fondo*/
+        .fondoNegro {
+        background-color: $negro;
+        }
+        .fondoDorado {
+        background-color: $dorado;
+        }
+        .gradiente {
+            background-color: #2d3436;
+            background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+        }
+        .gradienteDos {
+            background-color: #000000;
+            background-image: linear-gradient(147deg, #000000 20%, #434343 84%);
+        }
+        .gradienteTres {
+            background-color: #d2a813;
+            background-image: linear-gradient(315deg, #d2a813 50%, #000000 99%);
+        }
+        .fondoGris {
+        background: #2d3436;
+        }
+
+
+/*subrayado*/
+    .subrUno {
+        text-decoration: none;
+        color: $negro;
+        border: solid 2px $negro;
+        background-color: $dorado;
+        }
+        .subrDos {
+        text-decoration: underline;
+        color: $plateado;
+        font-style: italic;
+        }
+        label {
+        text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+/*mobile first*/
+/*smartphone*/
+@media (max-width: 480px){
+
+@import "margenmobile";
+
+
+
+/*estilo accordion*/
+.estiloAccordion {
+    font-style: italic;
+        font-size: 85%;
+        color: $plateado;
+        border: solid 1px $dorado;
+    }
+
+
+        /*estilo menu*/
+        span:hover {
+        opacity: 0.8;
+        }
+    
+        /*estilo imagenes*/
+        .transicion {
+        width: 4s;
+        height: 2s;
+        }
+        .transicion:hover {
+        width: 50vh;
+        text-align: center;
+        }
+    
+        /*lista*/
+        .listaUno {
+        list-style-type: circle;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*tablet*/
+@media (min-width: 481px) and
+(max-width: 1023px){
+
+@import "margentablet";
+
+
+
+/*estilo accordion*/
+        .estiloAccordion {
+            font-style: italic;
+            font-size: 85%;
+            color: $plateado;
+            border: solid 1px $dorado;
+        }
+
+
+        /*estilo menu*/
+        span:hover {
+        opacity: 0.8;
+        }
+    
+        /*estilo imagenes*/
+        .transicion {
+        width: 4s;
+        height: 2s;
+        }
+        .transicion:hover {
+        width: 50vh;
+        text-align: center;
+        }
+        
+        /*lista*/
+        .listaUno {
+        list-style-type: circle;
+        }
+
+
+        li {
+        width: 50%;
+        }
+        /*flex*/
+        .flexSection {
+        display: flex;
+        }
+        .flexSection3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            }
+        .flexWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        }
+        .flexNoWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*desktop*/
+@media (min-width: 1024px){
+
+@import "margendesktop";
+
+
+
+
+/*estilo accordion*/
+    .estiloAccordion {
+    font-style: italic;
+    font-size: 85%;
+    color: $plateado;
+    border: solid 1px $dorado;
+    }
+
+
+/*estilo menu*/
+    span:hover {
+    opacity: 0.8;
+    }
+    
+    /*estilo imagenes*/
+    .transicion {
+    width: 4s;
+    height: 2s;
+    }
+    .transicion:hover {
+    width: 50vh;
+    text-align: center;
+    }
+    
+    /*lista*/
+    .listaUno {
+    list-style-type: circle;
+    }
+
+
+/*flex*/
+    .flexSection {
+    display: flex;
+    }
+    .flexSection3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    .flexWrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    }
+    .flexNoWrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        }
+
+
+/*animaciones*/
+    .navAnimado {
+    animation-name: navegador;
+    animation-duration: 5s;
+    }
+    .textoAnimado {
+    animation-name: texto;
+    animation-duration: 3s;
+    }
+    
+    /*linea de tiempo*/
+    @keyframes navegador {
+    from  {
+    transform: translateX(400px);
+    }
+    to {
+    transform: translateX(0);
+    }
+    }
+    @keyframes texto {
+    from {
+    transform:translateX(-200px);
+    }
+    to {
+    transform:translateX(0);
+    }
+    }
+}
