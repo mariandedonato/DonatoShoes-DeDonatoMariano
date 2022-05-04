@@ -1,0 +1,11 @@
+Cambios realizados para la entrega:
+-Apliqué mixin en el scss de tipografia.
+-Apliqué extends en el scss de origen,
+en la sección de subrayados.
+-Puse keywords y descripción en todos los html.
+-Puse encabezados únicos en el head de cada página.
+-Modifiqué los títulos para respetar las jerarquías.
+-Eliminé la carpeta bootstrap ya que ocupa espacio 
+y solo utilicé el bootstrap que se encuentra dentro 
+de la carpeta scss.
+-Eliminé los estilos de tipografía que no utilicé.

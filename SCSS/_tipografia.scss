@@ -16,27 +16,37 @@
         }
 
 
+/*aplico mixin*/
+
+@mixin tipografia ($letra, $tamanio) {
+font-style: $letra;
+font-size: $tamanio;
+}
+.letraGrande {
+@include tipografia(normal, 400%);
+}
+.letraGrande2 {
+@include tipografia(normal, 380%);
+}
+.letraMediana {
+@include tipografia(normal, 120%);
+}
+.letraMediana2 {
+@include tipografia(normal, 130%);
+}
+.letraChica {
+@include tipografia(normal, 83%);
+}
+.letraChica2 {
+@include tipografia(normal, 97%);
+}
+
 
 /*estilo letra*/
-    .letraItalica {
-        font-style: italic;
-        }
-        .letraNegrita {
-        font-weight: bold;
-        }
-        .letraGrande {
-            font-size: 400%;
-        }
-        .letraMediana {
-            font-size: 120%;
-        }
-        .letraMediana2 {
-            font-size: 130%;
-        }
-        .letraChica {
-        font-size: 83%;
-        }
-        .letraChica2 {
-        font-size: 97%;
-        }
+.letraItalica {
+    font-style: italic;
+    }
+.letraNegrita {
+    font-weight: bold;
+    }
 

@@ -60,6 +60,29 @@ padding-right: 1vw;
 }
 
 
+/*subrayado*/
+.subrUno {
+    text-decoration: none;
+    color: $negro;
+    border: solid 2px $negro;
+    background-color: $dorado;
+    }
+    .subrDos {
+    text-decoration: underline;
+    color: $plateado;
+    font-style: italic;
+    }
+    label {
+    text-decoration: underline;
+    }
+
+//EXTENDS
+.subrUno-nuevo {
+@extend .subrUno;
+    background-color: #d2a813;
+    }
+
+
 /*color letra*/
 h1, h2, p {
     color: $plateado;
@@ -107,21 +130,6 @@ h1, h2, p {
         }
 
 
-/*subrayado*/
-    .subrUno {
-        text-decoration: none;
-        color: $negro;
-        border: solid 2px $negro;
-        background-color: $dorado;
-        }
-        .subrDos {
-        text-decoration: underline;
-        color: $plateado;
-        font-style: italic;
-        }
-        label {
-        text-decoration: underline;
-        }
 
 
 
